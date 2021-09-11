@@ -18,7 +18,7 @@ class Search extends React.Component {
               <Link className="close-search" to={"/"}>Close</Link>
               <div className="search-books-input-wrapper">
                 <input type="text" placeholder="Search by title or author" 
-                name="query" onChange={e=>this.props.handleSearch(e)} value={this.props.query}/>
+                name="query" onChange={this.props.handleSearch} value={this.props.query}/>
               </div>
             </div>
             <div className="search-books-results">

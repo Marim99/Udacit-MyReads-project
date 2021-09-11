@@ -40,7 +40,7 @@ class BooksApp extends React.Component {
     const query=q.target.value;
     this.setState({query:query});
     if(query){
-    search(query)
+    search(query.trim())
      .then((result) => {     
       if (result && result.length) {   
         this.setState({searchBooks: result}) ;
